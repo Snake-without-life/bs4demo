@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--w=dw设置宽度 is=1改变biewport的比例 stf=n在IOS9中起自适应作用-->
+  <link rel="stylesheet" href="bsv4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bsv4/css/style.css">
+  <title>index</title>
+</head>                                                     
+<body>
+    <!-- 头部 -->
+  <nav class="navbar fixed-top navbar-dark bg-primary"> <!--导航条 固定在顶端 蓝底白字风格-->
+    <a class="navbar-brand" href="#">某管理系统</a>
+    <form class="form-inline my-2 my-lg-0"> <!--fi水平排列的表单 my-2 my-lg-0间距-->
+      <div class="dropdown">
+        <a class="btn btn-primary dropdown-toggle text-white-50" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <!--bp默认按钮样式 dt使用一个按钮打开下拉菜单 tw5文字颜色 ah字符串true表示点击的时候会出现菜单或是浮动元-->
+          用户操作
+          </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">   
+          <!--下拉菜单展开-->
+          <a class="dropdown-item" href="#">个人中心</a>
+          <div class="dropdown-divider"></div>  
+          <!--dd下拉分割线-->
+          <a class="dropdown-item" href="#">退出</a>
+          <!--di下拉项-->
+        </div>
+      </li>
+      </div>
+    </form>
+  </nav>
+  <!-- 左侧导航 -->
+  <ul class="a position-fixed list-unstyled">
+    <!--pf fixed定位 lu无列表样式-->
+    <li class="active"><a href="index.html" class="text-white">首页</a></li>
+    <!--tw文字白色-->
+    <li><a href="user.html" class="text-white">用户中心</a></li>
+    <li><a href="search.html" class="text-white">数据查询</a></li>
+    <li><a href="data.html" class="text-white">数据面板</a></li>
+    <li><a href="tip.html" class="text-white">提醒事项&nbsp;&nbsp;<span class="badge badge-pill badge-warning">4</span></a></li>
+    <!--bp修饰符 bw徽章警告-->
+  </ul>
+  <div class="b position-fixed overflow-auto">
+    <!--pf fixed定位 oa自动溢出-->
+    <nav aria-label="breadcrumb ">
+      <!--al给当前元素加上的标签描述-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">首页</li>
+      </ol>
+    </nav>
+    <div class="container-fluid">
+      <!--cf在固有15px前提下的百分百宽度-->
+      <div class="row">
+          <div class="col-lg">
+            <!--col列 lg大、xs超小、sm小、md中等-->
+            <div class="card text-white bg-success mb-3">
+              <!--tw文字白色 bs风格样式-->
+              <div class="card-body">
+                <h5 class="card-title-light">当天用户总数</h5>
+                <p class="card-text display-3">120,123</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card text-white bg-primary mb-3">
+              <div class="card-body">
+                <h5 class="card-title-light">每日平均活跃用户数</h5>
+                <p class="card-text display-3">1,123</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card text-white bg-warning mb-3">
+              <div class="card-body">
+                <h5 class="card-title-light">每日平均访问次数</h5>
+                <p class="card-text display-3">3,123</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="bsv4/js/jquery.slim.min.js"></script>
+  <script src="bsv4/js/umd/popper.min.js"></script>
+  <script src="bsv4/js/bootstrap.min.js"></script>
+</body>
+</html>
